@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
 /*------Global------*/
+
 * {
 	margin:0;
 	padding:0;
@@ -13,7 +17,12 @@ html {
 }
 
 body {
-	width: 100%;
+	font-family: 'Galada', cursive;
+	font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: #eee;
+  width: 100%;
+
 }
 
 h1 {
@@ -46,7 +55,6 @@ p {
 	line-height: 85px;
 	vertical-align: middle;
 	padding: 0 5%;
-	/*width: 80%;*/
 	align-items: middle;
 }
 
@@ -95,6 +103,64 @@ header {
 	background-repeat: no-repeat;
 	background-size: 70% 45%;
 	background-position: top right; 
+}
+
+.container {
+  height: 100vh;
+  padding: 20% 0 0 5%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 4rem;
+  /*padding: 0.5rem;*/
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  line-height: 4rem;
+  /*overflow: hidden;*/
+}
+
+.container h3 {
+  font-size: 2.5rem;
+  padding: 1.1rem 0 ;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  overflow: hidden;
+}
+
+.container h3 span.typed-text {
+  font-weight: normal;
+  color: #F4DB0D;
+}
+.container h3 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container h3 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+.container p {
+  font-size: 16px;
+  /*padding: 0.5rem;*/
+  font-weight: 100%;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  /*overflow: hidden;*/
 }
 
 
