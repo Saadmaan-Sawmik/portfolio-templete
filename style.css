@@ -1,34 +1,65 @@
+/*------Global------*/
 * {
 	margin:0;
 	padding:0;
+	border: 0;
+	font-size:100%;
 	box-sizing: border-box;
+	/*vertical-align: baseline;*/
+}
+
+html {
 	font-family: poppins;
 }
 
-#menu-area {
-	display: flex;
+body {
+	width: 100%;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 100;
+	color: #292929;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+p {
+	font-size: 16px;
+}
+
+
+
+/*------navbar------*/
+#nav-area {
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: flex;
 	justify-content: space-between;
-	padding: 0 60px;
 	position: fixed;
 	width: 100%;
-	top: 0;
 	transition: background 0s;
+	line-height: 85px;
+	vertical-align: middle;
+	padding: 0 5%;
+	/*width: 80%;*/
+	align-items: middle;
 }
 
-#menu-area .logo img {
-	height: 70px;
-	transtition: height 0.5s;
-	padding-top: 10px;
+#nav-area .logo img {
+	height: 41px;
+	transition: height 0.5s;
+	vertical-align: middle;
+	/*padding-left: 10vh;*/
 }
 
-#menu-area ul{
+#nav-area ul{
 	align-items: center;
-	background-color: gray;
-	width: 500px;
+	width: 50%;
 	justify-content: space-around;
 	list-style: none;
 	display: -webkit-flex;
@@ -39,11 +70,32 @@
 	text-decoration: none;
 }
 
-#menu-area ul a{
+#nav-area ul a{
 	text-decoration: none;
-	color: black;
+	color: lightgray;
 }
 
+#nav-area .btn-outline {
+	display: block;
+	text-decoration: none;
+	color: lightgray;
+	border: 2px solid #F6DD00;
+	border-radius: 6px;
+	width: 113px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+/*------header------*/
+header {
+	height: 1000px;
+	min-height: 1000px;
+	background-image: url(svg/1x/topRight.png);
+	background-repeat: no-repeat;
+	background-size: 70% 45%;
+	background-position: top right; 
+}
 
 
 
