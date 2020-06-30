@@ -40,6 +40,16 @@ p {
 }
 
 
+/*------header------*/
+header {
+	height: 100vh;
+	min-height: 100vh;
+	background-image: url(svg/1x/topRight.png);
+	background-repeat: no-repeat;
+	background-size: 75% 80%;
+	background-position: top right; 
+}
+
 
 /*------navbar------*/
 #nav-area {
@@ -48,11 +58,12 @@ p {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	background-color: transparent;
 	justify-content: space-between;
 	position: fixed;
 	width: 100%;
 	transition: background 0s;
-	line-height: 85px;
+	line-height: 60px;
 	vertical-align: middle;
 	padding: 0 5%;
 	align-items: middle;
@@ -68,6 +79,7 @@ p {
 #nav-area ul{
 	align-items: center;
 	width: 50%;
+	/*background: yellow;*/
 	justify-content: space-around;
 	list-style: none;
 	display: -webkit-flex;
@@ -76,11 +88,27 @@ p {
 	display: -o-flex;
 	display: flex;
 	text-decoration: none;
+	font-size: 14px;
 }
 
-#nav-area ul a{
+#nav-area ul li {
+	display: ;
+	/*position: static;*/
+	text-decoration: none;
+	color: lightyellow;
+	/*background-color: gray;*/
+	/*height: 10px;*/
+}
+
+#nav-area ul li a{
+	display: ;
+	position: static;
 	text-decoration: none;
 	color: lightgray;
+	/*background-color: gray;*/
+	height: 10px;
+	text-decoration: none;
+
 }
 
 #nav-area .btn-outline {
@@ -95,22 +123,34 @@ p {
 	text-align: center;
 }
 
-/*------header------*/
-header {
-	height: 1000px;
-	min-height: 1000px;
-	background-image: url(svg/1x/topRight.png);
-	background-repeat: no-repeat;
-	background-size: 70% 45%;
-	background-position: top right; 
-}
-
 .container {
+	position: relative;
   height: 100vh;
   padding: 20% 0 0 5%;
   display: inline-block;
   justify-content: center;
   align-items: center;
+}
+
+/*.container .top-img {
+	position: absolute;
+	top: 0;
+	left: ;
+	right: 0;
+}*/
+
+.container .per-img{
+	position: absolute;
+	padding: 0 0 0 480px;
+/*	padding-left: 480px;*/
+	top: 150px;
+	/*z-index: 2;*/
+}
+
+.container .per-img img {
+	width: 450px;
+	z-index: 2;
+
 }
 
 .container h1 {
@@ -124,17 +164,20 @@ header {
 }
 
 .container h3 {
+	position: relative;
   font-size: 2.5rem;
   padding: 1.1rem 0 ;
   font-weight: 100;
-  letter-spacing: 0.1rem;
+  /*letter-spacing: 0.1rem;*/
   text-align: left;
   overflow: hidden;
 }
 
 .container h3 span.typed-text {
+  position: relative;
   font-weight: normal;
   color: #F4DB0D;
+  z-index: 3;
 }
 .container h3 span.cursor {
   display: inline-block;
@@ -156,10 +199,12 @@ header {
 
 .container p {
   font-size: 16px;
+  position: relative;
   /*padding: 0.5rem;*/
   font-weight: 100%;
   letter-spacing: 0.1rem;
   text-align: left;
+  z-index: 5;
   /*overflow: hidden;*/
 }
 
